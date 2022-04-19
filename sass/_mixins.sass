@@ -1,0 +1,32 @@
+@use 'variables'
+
+@mixin container 
+  padding:.5rem 2rem
+
+@mixin container-filme
+  width: 60%
+
+@mixin flex-header
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+@mixin flex-main
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+
+@mixin button
+  background-color: rgba(0,0,0,.30)
+  color: variables.$text-color-botton
+  padding:1rem 2rem
+  border-radius: 2px
+  border: none
+  cursor: pointer
+  transition: .3s ease all
+
+  &:hover
+    background-color: variables.$text-color-botton
+    color: #000000
+    

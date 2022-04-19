@@ -1,0 +1,63 @@
+@use 'variables'
+@use 'mixins'
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  background: variables.$preto
+  font-family: variables.$font-family-body
+.container
+  @include mixins.flex-header
+  @include mixins.container
+
+  &-logo
+    color: variables.$text-color-logo
+    font-feature-settings: 'Arial Black',Times, serif
+    font-size: 2.5rem
+
+  &-nav 
+    a
+      text-decoration: none
+      color: variables.$text-color
+      margin-right: 0.625rem
+      transition: .3s
+      
+      &:hover
+        color: variables.$text-color-hover
+
+main
+
+  .filme-principal
+    @include mixins.flex-main
+    @include mixins.container
+
+    font-size: 1rem
+    color: variables.$text-color-main
+    background: linear-gradient(rgba(0, 0,0 ,.50 ),rgba(0,0,0,.50)100%), url('/img/homem-aranha-antigos.jpg')
+    height:400px
+    background-size: cover
+
+    &-container 
+      margin-top:15%
+      @include mixins.container-filme
+      .titulo
+        font-size: 3.5rem
+        font-family: variables.$font-family-titulo
+        margin-bottom:1rem
+
+      .descricao
+        margin-bottom: 2rem
+        font-size: 1.2rem
+
+      .botao
+        @include mixins.button
+        margin-right: 1rem
+
+        i
+          margin-right:.5rem
+        
+
+    

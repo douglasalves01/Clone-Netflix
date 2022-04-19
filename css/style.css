@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #141414;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+.container-logo {
+  color: #e50914;
+  font-feature-settings: "Arial Black", Times, serif;
+  font-size: 2.5rem;
+}
+.container-nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 0.625rem;
+  transition: 0.3s;
+}
+.container-nav a:hover {
+  color: #fff;
+}
+
+main .filme-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url("/img/homem-aranha-antigos.jpg");
+  height: 400px;
+  background-size: cover;
+}
+main .filme-principal-container {
+  margin-top: 15%;
+  width: 60%;
+}
+main .filme-principal-container .titulo {
+  font-size: 3.5rem;
+  font-family: "trebuchet MS", sans-serif;
+  margin-bottom: 1rem;
+}
+main .filme-principal-container .descricao {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+main .filme-principal-container .botao {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  margin-right: 1rem;
+}
+main .filme-principal-container .botao:hover {
+  background-color: #fff;
+  color: #000000;
+}
+main .filme-principal-container .botao i {
+  margin-right: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
